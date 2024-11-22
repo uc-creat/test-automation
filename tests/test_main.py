@@ -1,4 +1,8 @@
-from src.main import test
+from src.main import add
 
-def test_main():
-  assert test(3,4) == 7
+import unittest
+
+class TestStringMethods(unittest.TestCase):
+    def test_upper(self):
+        self.assertEqual(add(3,4), 7)
+
