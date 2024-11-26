@@ -36,3 +36,6 @@ dataObject = {
 
 # source .venv/bin/activate
 # python -m flask run
+
+ # echo "$path"
+        # echo "text=$(cat test)" >> $GITHUB_OUTPUT
