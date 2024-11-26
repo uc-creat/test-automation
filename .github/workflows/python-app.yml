@@ -31,9 +31,7 @@ jobs:
         
     - name: Displaying Output
       run: |
-        some_response=$(test.txt)
-        echo response_output=$some_response >> $GITHUB_OUTPUT
-        echo "Response is: ${{ steps.some-request.outputs.response_output }}"
+        echo "text=$(cat test.txt | base64 -w 0)" >> $GITHUB_OUTPUT
     
 
 
