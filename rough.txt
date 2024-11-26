@@ -1,0 +1,38 @@
+dataObject = {
+  "Header":"Unable to add payment method account",
+  "Summary":'''
+      Overview:
+      A couple of orgs is unable to add a payment method due to an error mentioned in the audit logs: Bankemoji payment profile was found but is not active.
+      ORG Tier:
+      Tier 3
+      Expected behavior:
+      The org. should be able to add the card.
+      Actual behavior:
+      The org. is unable to add the card, due to an error.
+      Error Message:
+      Something went wrong when adding this payment method to your account.
+      Steps to reproduce:
+      1.⁠ ⁠Sign in to admin's dashboard and try adding a card -> the above mentioned error pops up.
+      2.⁠ ⁠Check the audit logs and the following message is displayed : Bankemoji payment profile was found but is not active.
+      3. ⁠Checked card query and found a status code of 2099, which seems to be an error related to authentication, but the card is approved from our end.
+      Examples:
+      Org UUID: 1f28eb7d-bae0-5d3a-a860-3972940af648
+      Admin UUID: 62d34b5a-dcaa-47eb-a85e-7afc3d8d205a
+      Last 4 digits of payment method: 3903
+      Original Bug Report:
+      https://jira.uberinternal.com/browse/GSDFE-261647 ** 
+      Additional examples will be added to the doc below:
+      T3 example sheet ** 
+      Additional Description/Notes:
+      This issue was faced by other orgs as well a while ago, and was fixed by eng - reference T3
+      EPIC link
+      KIP Link
+      U4B-6 ''',
+  "Issue_Type":"Bug",
+  "Description":"",
+  "Status":"Open"
+}
+
+
+# source .venv/bin/activate
+# python -m flask run
