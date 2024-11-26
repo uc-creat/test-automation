@@ -30,7 +30,7 @@ jobs:
         pytest
 
     - name: Displaying output
-      run: echo "display $(cat test.txt)" >> "$GITHUB_OUTPUT"
+      run: echo "$(cat test.txt)" >> "$GITHUB_OUTPUT"
 
 
 
