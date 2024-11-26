@@ -29,9 +29,13 @@ jobs:
       run: |
         pytest
         
-    - name: Displaying Output
-      run: |
-        run: echo "::set-output name=version::$(cat test)"
+    - name: Read Output
+      id: package
+      uses: jaywcjlove/github-action-read-file@main
+      with:
+        path: test.txt
+    - name: Display
+      run: echo "${{ steps.package.outputs.content }}"
     
 
 
