@@ -30,7 +30,7 @@ jobs:
         pytest
 
     - name: Displaying output
-      run: echo "green" >> "$GITHUB_OUTPUT"
+      run: echo "test.txt" >> "$GITHUB_OUTPUT"
 
 
 
