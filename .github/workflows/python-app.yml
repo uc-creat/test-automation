@@ -31,6 +31,7 @@ jobs:
         
     - name: Displaying Output
       run: |
+        echo "$path"
         echo "text=$(cat test)" >> $GITHUB_OUTPUT
     
 
